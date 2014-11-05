@@ -1,0 +1,14 @@
+var foundSearch = ('<ul style= "float:right; font-size:12px; font-weight:bold; margin-top:8px;"><li style="display:inline; margin-left:10px;"> <select class="styled-select" id="sortByInitiative" onchange="alert(this.value, 1)" style="font-size:12px; width:auto"><option value="" selected="selected">Sort By</option><option value ="current">Current Initiatives</option><option value="finished">Finished Initiatives</option><option value ="newest">Newest</option><option value="oldest">Oldest</option><option value ="low-to-high">Budget (Low to High)</option><option value="high-to-low">Budget (High to Low)</option></select></li><li style="display:inline; margin-left:10px;"><input id = "sortLocation" class="form-control" style="width:100px;  display:inline" type="search" name="sortLocation" onkeyup="return sortByLocation(); return false;" value = "" placeholder="Location"></li></ul>');
+
+
+function alert(tag, pageNumber) {
+  if ((tag=="current") || (tag =="finished")){
+    sortInitiative(tag, pageNumber);
+  } else {
+    if ((tag=="newest") || (tag =="oldest")){
+      sortBy(tag, 0, pageNumber);
+    } else if ((tag=="low-to-high") || (tag =="high-to-low")){
+      sortBy(tag, 1, pageNumber);
+    }
+  }
+}

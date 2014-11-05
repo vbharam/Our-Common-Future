@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sending Email Using PHP | Weblessons</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+
+  </head>
+  <body>
+
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+  <div class="col-md-10"><h3>E mail Script Demo</h3><br></div>
+
+	<form class="form-horizontal" role="form" id="signupFor" method="POST" action="sendmail.php">
+    <div class="form-group">
+      <input class="form-control" name="to_email" placeholder="Your email address">
+    </div>
+    <div class="form-group">
+      <input class="form-control" name="subject" placeholder="E-mail Subject">
+    </div>
+    <div class="form-group">
+    	<textarea class="ckeditor" name="body" cols="80" id="editor1" name="editor1" rows="12">				
+  		</textarea>
+  	</div>
+  	<div class="form-group">
+  	<input type="submit" class="btn btn-success" value="Send mail">
+  	</div>
+  </form>  
+
+  </div>    
+  </div>
+  </div>
+
+  </body>
+</html>
