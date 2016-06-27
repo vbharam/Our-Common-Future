@@ -1,16 +1,12 @@
 <snippet>
-  <content><![CDATA[
-# ${1:Online UWC}
+  <content>
+# Online UWC
 
 Online UWC makes online education a force to unite people to build a peaceful and sustainable future.
 
 ## Installation
 
 Visit the website on www.onlineuwc.org
-
-## Usage
-
-TODO: Write usage instructions
 
 ## Contributing
 
@@ -24,13 +20,9 @@ TODO: Write usage instructions
 
 TODO: Write history
 
-## Credits
-
-TODO: Write credits
-
 ## License
 
 TODO: Write license
-]]></content>
-  <tabTrigger>readme</tabTrigger>
+</content>
+  <tabTrigger>ONLINE_UWC</tabTrigger>
 </snippet>
